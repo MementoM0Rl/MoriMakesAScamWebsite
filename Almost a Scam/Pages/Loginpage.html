@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Bevis at du er ett menneske</title>
+</head>
 <body>
+  <h1>Enter Your Info</h1>
+  <form id="myForm">
+    <label for="name">Navn:</label>
+    <input type="text" id="name" name="name" required><br><br>
 
-<h2>Er du en robot?</h2>
+    <label for="number">Personnummer:</label>
+    <input type="number" id="number" name="number" required><br><br>
 
-<form action="">
-  <label for="name">Navn:</label><br>
-  <input type="text" id="name" name="name" value=""><br>
-  <label for="Number">Personnummer:</label><br>
-  <input type="text" id="Number" name="Number" value=""><br><br>
-  <input type="submit" value="Submit">
-</form> 
+    <button type="submit">Submit</button>
+  </form>
 
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
 
+     
+      const name = document.getElementById("name").value;
+      const number = document.getElementById("number").value;
+
+   
+      window.location.href = "Almost a Scam\Pages\youalmostgotscammed.html";
+    });
+  </script>
 </body>
 </html>
