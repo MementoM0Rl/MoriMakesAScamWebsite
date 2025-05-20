@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bevis at du er ett menneske</title>
+  <title>Bevis at du er et menneske</title>
 </head>
 <body>
-  <h1>Enter Your Info</h1>
+  <h1>Er du en robot?</h1>
   <form id="myForm">
     <label for="name">Navn:</label>
     <input type="text" id="name" name="name" required><br><br>
@@ -17,15 +17,9 @@
 
   <script>
     document.getElementById("myForm").addEventListener("submit", function(event) {
-      event.preventDefault(); 
-
-     
-      const name = document.getElementById("name").value;
-      const number = document.getElementById("number").value;
-
-   
-      window.location.href = "AlmostAScam\Pages\youalmostgotscammed.html";
-    });l
+      event.preventDefault();
+      window.location.href = "http://127.0.0.1:5500/AlmostAScam/Pages/youalmostgotscammed.html";
+    });
   </script>
 </body>
 </html>
